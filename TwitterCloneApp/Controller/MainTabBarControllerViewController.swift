@@ -7,4 +7,8 @@ class MainTabBarControllerViewController: UITabBarController {
         view.backgroundColor = .systemRed
     }
     
+    func configureViewControllers() {
+        
+    }
+    
 }
