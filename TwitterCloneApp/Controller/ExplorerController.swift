@@ -4,5 +4,6 @@ class ExplorerController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .gray
     }
 }
