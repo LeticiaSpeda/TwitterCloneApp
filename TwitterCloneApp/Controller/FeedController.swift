@@ -4,7 +4,11 @@ class FeedController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
+        configureView()
     }
 
+    
+    func configureView() {
+        view.backgroundColor = .orange
+    }
 }
