@@ -4,6 +4,11 @@ class NotificationController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        configureView()
+    }
+    
+    func configureView() {
+        view.backgroundColor = .white
+        navigationItem.title = "Notifications"
     }
 }

@@ -4,6 +4,11 @@ class ExplorerController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        configureView()
+    }
+    
+    func configureView() {
+        view.backgroundColor = .white
+        navigationItem.title = "Explore"
     }
 }

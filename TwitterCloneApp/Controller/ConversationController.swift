@@ -4,6 +4,12 @@ class ConversationController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        configureView()
+    }
+
+    
+    func configureView() {
+        view.backgroundColor = .white
+        navigationItem.title = "Messages"
     }
 }
