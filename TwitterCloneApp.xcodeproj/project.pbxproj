@@ -17,6 +17,7 @@
 		E07799382BF4D6AD00181961 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07799372BF4D6AD00181961 /* ConversationController.swift */; };
 		E077993A2BF4D6D500181961 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07799392BF4D6D500181961 /* NotificationController.swift */; };
 		E07A78302C0E99FC00781B77 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07A782F2C0E99FC00781B77 /* Extensions.swift */; };
+		E07A78332C0E9DAF00781B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07A78322C0E9DAF00781B77 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E07799372BF4D6AD00181961 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
 		E07799392BF4D6D500181961 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		E07A782F2C0E99FC00781B77 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E07A78322C0E9DAF00781B77 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		E07799142BF4CE8200181961 /* TwitterCloneApp */ = {
 			isa = PBXGroup;
 			children = (
+				E07A78312C0E9D9700781B77 /* Authentication */,
 				E077992B2BF4D2CD00181961 /* Model */,
 				E077992C2BF4D2D400181961 /* View */,
 				E077992D2BF4D2E400181961 /* ViewModel */,
@@ -143,6 +146,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E07A78312C0E9D9700781B77 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E07A78322C0E9DAF00781B77 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07A78332C0E9DAF00781B77 /* LoginViewController.swift in Sources */,
 				E07799162BF4CE8200181961 /* AppDelegate.swift in Sources */,
 				E07799182BF4CE8200181961 /* SceneDelegate.swift in Sources */,
 				E07799362BF4D67200181961 /* ExplorerController.swift in Sources */,
