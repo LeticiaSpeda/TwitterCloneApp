@@ -2,9 +2,28 @@ import UIKit
 
 class MainTabBarControllerViewController: UITabBarController {
 
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.tintColor = .white
+        button.backgroundColor = .blue
+        button.setImage(UIImage(named: "newTweet"), for: .normal)
+        button.layer.cornerRadius = 56/2
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewControllers()
+        configureUI()
+    }
+    
+    func configureUI() {
+        view.addSubview(actionButton)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        actionButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
+        actionButton.widthAnchor.constraint(equalToConstant: 56).isActive = true
+        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -64).isActive = true
+        actionButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
     }
     
     func configureViewControllers() {
