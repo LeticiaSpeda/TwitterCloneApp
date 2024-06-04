@@ -16,6 +16,7 @@
 		E07799362BF4D67200181961 /* ExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07799352BF4D67200181961 /* ExplorerController.swift */; };
 		E07799382BF4D6AD00181961 /* ConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07799372BF4D6AD00181961 /* ConversationController.swift */; };
 		E077993A2BF4D6D500181961 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07799392BF4D6D500181961 /* NotificationController.swift */; };
+		E07A78302C0E99FC00781B77 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07A782F2C0E99FC00781B77 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E07799352BF4D67200181961 /* ExplorerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerController.swift; sourceTree = "<group>"; };
 		E07799372BF4D6AD00181961 /* ConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationController.swift; sourceTree = "<group>"; };
 		E07799392BF4D6D500181961 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E07A782F2C0E99FC00781B77 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		E07799302BF4D33400181961 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E07A782F2C0E99FC00781B77 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				E07799162BF4CE8200181961 /* AppDelegate.swift in Sources */,
 				E07799182BF4CE8200181961 /* SceneDelegate.swift in Sources */,
 				E07799362BF4D67200181961 /* ExplorerController.swift in Sources */,
+				E07A78302C0E99FC00781B77 /* Extensions.swift in Sources */,
 				E077993A2BF4D6D500181961 /* NotificationController.swift in Sources */,
 				E07799322BF4D3AF00181961 /* MainTabBarControllerViewController.swift in Sources */,
 				E07799382BF4D6AD00181961 /* ConversationController.swift in Sources */,
