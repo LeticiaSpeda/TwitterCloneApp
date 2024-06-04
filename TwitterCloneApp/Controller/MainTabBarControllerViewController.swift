@@ -5,7 +5,7 @@ class MainTabBarControllerViewController: UITabBarController {
     let actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = .white
-        button.backgroundColor = .blue
+        button.backgroundColor = .twitterBlue
         button.setImage(UIImage(named: "newTweet"), for: .normal)
         return button
     }()
