@@ -33,6 +33,15 @@ class LoginViewController: UIViewController {
         return textField
     }()
     
+     private lazy var loginButton: UIButton = {
+        let button = UIButton()
+         button.setTitle("Log in", for: .normal)
+         button.setTitleColor(.twitterBlue, for: .normal)
+         button.backgroundColor = .white
+         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        return button
+    }()
+    
     
   
     
@@ -50,15 +59,15 @@ class LoginViewController: UIViewController {
         logoImageView.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor)
         logoImageView.setDimensions(width: 150, height: 150)
         
-        let stack = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView])
+        let stack = UIStackView(arrangedSubviews: [emailContainerView, passwordContainerView, loginButton])
         stack.axis = .vertical
-        stack.spacing = 8
+        stack.spacing = 20
         view.addSubview(stack)
         stack.anchor(
             top: logoImageView.bottomAnchor,
             left: view.leftAnchor, right: view.rightAnchor,
-            paddingLeft: 16,
-            paddingRight: 16
+            paddingLeft: 32,
+            paddingRight: 32
         )
         
     }
