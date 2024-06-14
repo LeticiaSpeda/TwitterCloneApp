@@ -22,6 +22,11 @@ class Utilities {
         
         view.addSubview(textField)
         textField.anchor(left: imagView.rightAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, paddingBottom: 8)
+        
+        let dividerView = UIView()
+        dividerView.backgroundColor = .white
+        view.addSubview(dividerView)
+        dividerView.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, height: 0.75)
         return view
     }
     
