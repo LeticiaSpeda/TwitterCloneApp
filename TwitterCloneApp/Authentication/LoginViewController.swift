@@ -10,36 +10,31 @@ class LoginViewController: UIViewController {
         return image
     }()
     
-    private lazy var emailContainerView = {
-        let view = UIView()
-        let emailIcon = UIImageView()
-        emailIcon.image = UIImage.mail
-        emailIcon.tintColor = .white
-        view.addSubview(emailIcon)
-        emailIcon.anchor(
-            left: view.leftAnchor,
-            bottom: view.bottomAnchor,
-            paddingLeft: 8,
-            paddingBottom: 8
-        )
-        emailIcon.setDimensions(width: 24, height: 24)
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    private lazy var emailContainerView: UIView = {
+        let image = #imageLiteral(resourceName: "mail")
+        let view = Utilities().inputContainerView(withImage: image, textField: emailTextField)
         return view
     }()
     
-    
-    private lazy var passwordContainerView = {
-        let view = UIView()
-        let passwordIcon = UIImageView()
-        passwordIcon.image = UIImage.password
-        passwordIcon.tintColor = .white
-        view.addSubview(passwordIcon)
-        passwordIcon.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
-        passwordIcon.setDimensions(width: 24, height: 24)
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    private lazy var passwordContainerView: UIView = {
+        let image = #imageLiteral(resourceName: "password")
+        let view = Utilities().inputContainerView(withImage: image, textField: passwordTextField)
         return view
     }()
     
+    private lazy var emailTextField: UITextField = {
+        let textField = Utilities().textField(withPlaceHolder: "email")
+        return textField
+    }()
+    
+    private lazy var passwordTextField: UITextField = {
+        let textField = Utilities().textField(withPlaceHolder: "password")
+        textField.isSecureTextEntry = true
+        return textField
+    }()
+    
+    
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
